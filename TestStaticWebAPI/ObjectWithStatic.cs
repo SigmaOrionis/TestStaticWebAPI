@@ -35,7 +35,7 @@ namespace TestStaticWebAPI
                     genesis += stringChars[x];
                 }
 
-                mStringList.Add( genesis );
+                mStringList.Add( genesis+ CurrentContext!.Request.Host);
             }
         }
 

@@ -19,7 +19,7 @@ namespace TestStaticWebAPI.Controllers
         public async Task<IActionResult> TestFuncAsync()
         {
             ObjectWithStatic.CurrentContext = HttpContext;
-            var res = await mOWS.DoSomeWork();
+            string res = await mOWS.DoSomeWork();
             return Ok( res );
         }
         
