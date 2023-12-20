@@ -4,7 +4,6 @@ namespace TestStaticWebAPI
 {
     public class ObjectWithStatic
     {
-        //HttpContext mContext;
         private static readonly string stringChars = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890+_=*-?!@#$%^&(){}[]";
         public static HttpContext? CurrentContext { get; set; }
 
@@ -12,7 +11,6 @@ namespace TestStaticWebAPI
 
         public ObjectWithStatic( ) 
         { 
-            //mContext = httpContext;
             mStringList = new List<string>();
         }     
 
